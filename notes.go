@@ -13,7 +13,7 @@ type Note struct {
 	Timestamp int64
 }
 
-var notes []Note
+var notes []Note = make([]Note, 0)
 
 func GetNotes() string {
 	json := serializeNotes()
